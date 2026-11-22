@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "rea-seo": {
+      "command": "node",
+      "args": ["src/mcp/server.js"],
+      "env": { "REA_SEO_DELAY_MS": "1000" }
+    }
+  }
+}

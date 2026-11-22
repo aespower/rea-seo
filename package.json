@@ -1,0 +1,30 @@
+{
+  "name": "rea-seo",
+  "version": "0.1.0",
+  "description": "Ingeniería inversa de posicionamiento SEO: crawler técnico, análisis de sitemaps, HTML crudo vs DOM renderizado y servidor MCP para Claude Code.",
+  "type": "module",
+  "bin": {
+    "rea-seo": "src/cli.js",
+    "rea-seo-mcp": "src/mcp/server.js"
+  },
+  "scripts": {
+    "analyze": "node src/cli.js analyze",
+    "crawl": "node src/cli.js crawl",
+    "sitemap": "node src/cli.js sitemap",
+    "mcp": "node src/mcp/server.js",
+    "test": "node --test test/*.test.js",
+    "browsers": "npx playwright install chromium"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["seo", "reverse-engineering", "playwright", "mcp", "claude-code"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "cheerio": "^1.0.0",
+    "fast-xml-parser": "^4.5.0",
+    "playwright": "^1.48.0",
+    "zod": "^3.23.8"
+  }
+}
